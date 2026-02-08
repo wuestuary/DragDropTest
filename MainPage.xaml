@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DragDropTest.MainPage"
+             BackgroundColor="#512BD4">
+
+    <VerticalStackLayout Spacing="25" Padding="30">
+        <Label Text="拖放测试" 
+               FontSize="24" 
+               HorizontalOptions="Center"
+               TextColor="White"/>
+        
+        <Border x:Name="DropArea"
+                Stroke="White" 
+                StrokeThickness="2" 
+                BackgroundColor="#333"
+                Padding="50"
+                HorizontalOptions="Center">
+            <Label x:Name="DropLabel"
+                   Text="把文件拖到这里"
+                   TextColor="White"
+                   HorizontalOptions="Center"/>
+        </Border>
+        
+        <Label x:Name="ResultLabel"
+               Text="等待拖放..."
+               TextColor="White"
+               HorizontalOptions="Center"/>
+    </VerticalStackLayout>
+
+</ContentPage>
